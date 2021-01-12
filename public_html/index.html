@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Simple Game</title>
+
+        <meta name="description" content="Game where you must get 10 coins"/>
+        <meta name="keywords" content="game"/>
+        <meta http-equiv"X-UA-Compatible" content="IE=edge,chrome=1" />
+        
+        <style>
+            #gameScreen {
+                border: 1px solid black;
+            }
+            
+            #scoreBoard{
+                border: 1px solid black;
+            }
+            
+            img {
+                display: none;
+            }
+        </style>
+
+        <script type="module" src="src/index.js"></script>
+    </head>
+    <body>
+        <img id="img_first_player" src="assets/images/one.png"/>
+        <img id="img_second_player" src="assets/images/two.png"/>
+        <img id="img_brick" src="assets/images/brick.png"/>        
+        <img id="img_coin" src="assets/images/coin.png"/>        
+        <canvas id="gameScreen" width="400" height="400"></canvas>
+        <canvas id="scoreBoard" width="100" height="100"></canvas>
+    </body>
+</html>
